@@ -201,10 +201,10 @@ Create time series panel plot with weekend and weekday
 par(mfrow = c(1,2))
 plot(tapply(dat3$steps, dat3$interval, mean), type="l",
      xlab = "Time Interval in 5 Minute Increments",
-     ylab= "Average Steps", main = "Mean Steps per 5 Minute Interval")
+     ylab= "Average Steps", main = "Weekdays")
 plot(tapply(dat4$steps, dat4$interval, mean), type="l",
      xlab = "Time Interval in 5 Minute Increments",
-     ylab= "Average Steps", main = "Mean Steps per 5 Minute Interval")
+     ylab= "Average Steps", main = "Weekends")
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-15-1.png) 
